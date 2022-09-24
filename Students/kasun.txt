@@ -1,1 +1,1 @@
-{"maths":34,"physics":100}
+{"maths":34,"physics":100,"homescience":67}

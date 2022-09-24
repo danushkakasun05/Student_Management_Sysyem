@@ -19,7 +19,7 @@ public class Subjects_main {
     }
 
     private List<Subjects> subjectslist;
-    public void subjectMain()throws Exception{
+    public void subjectMain()throws customException, Exception{
         Scanner input = new Scanner(System.in);
         ObjectMapper mapper = new ObjectMapper();
         List<Subjects> subs = new ArrayList<>();

@@ -12,8 +12,8 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class seperateInput{
-    public void seperateMarksInput(String name) {
-        try{
+    public void seperateMarksInput(String name) throws customException,IOException {
+
             Map<String, Integer> maps = new HashMap<>();
             Scanner input= new Scanner(System.in);
             ObjectMapper mapper = new ObjectMapper();
@@ -36,13 +36,9 @@ public class seperateInput{
                 Path filePath2 = Paths.get("E:\\ProgramInterlij\\com.maven\\Students\\" +name+".txt");
                 mapper.writeValue(filePath2.toFile(), maps);
 
-            }  catch (customException e) {
-            System.out.println(e);
-        } catch (Exception e ){
-            System.out.println(e);}
+
     }
-    public void seperateSubjectmarks(String sub){
-        try {
+    public void seperateSubjectmarks(String sub) throws customException,IOException{
             Scanner input =new Scanner(System.in);
             Path directPathSub = Paths.get("E:\\ProgramInterlij\\com.maven\\Students\\");
             String[] namelistStd = directPathSub.toFile().list();
@@ -61,11 +57,7 @@ public class seperateInput{
 
                 }
             }
-        }catch(customException e){
-            System.out.println( e);
-        }catch (Exception e){
-            System.out.println(e);
-        }
+
 
     }
 }

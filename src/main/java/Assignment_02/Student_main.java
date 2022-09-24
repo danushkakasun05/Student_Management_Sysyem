@@ -21,7 +21,7 @@ public class Student_main{
     }
 
     private List<Student>StudentList;
-    public  void StudentMain() throws Exception {
+    public  void StudentMain() {
             while (true) {
                 try{
 
