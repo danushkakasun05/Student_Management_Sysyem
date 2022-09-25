@@ -11,9 +11,6 @@ public class main {
     public static void main(String[] args) {
         while(true) {
             try {
-
-
-                // Map<String, Integer> maps = new HashMap<>();
                 System.out.println("A. Student management: ");
                 System.out.println("B. Subject management: ");
                 System.out.println("C. find the grades: ");
@@ -46,8 +43,10 @@ public class main {
 
             } catch (InputMismatchException e) {
                 System.out.println("Enter valid number" + e);
+                e.printStackTrace();
             } catch (Exception e) {
                 System.out.println("error" + e);
+                e.printStackTrace();
             }
         }
 
